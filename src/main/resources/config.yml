@@ -1,0 +1,36 @@
+# NollyHub Configuration
+
+# Permissions
+permissions:
+  hub:
+    default: 'nollyhub.default'
+    admin: 'nollyhub.admin'
+
+# Commands
+commands:
+  hub: 'hub'
+
+# Hub Location
+hub:
+  world: null
+  x: null
+  y: null
+  z: null
+  yaw: null
+
+# Features
+features:
+  disable_hunger: true
+  set_adventure_gamemode: true
+  disable_pvp: true
+
+# Messages
+messages:
+  welcome: <gold>Welcome to the <bold>Hub</bold>!</gold>
+  hub_not_set: <red><bold>Hub has not been set yet.</bold></red>
+  set_hub: <green>Hub location has been <bold>updated</bold>!</green>
+  hub_too_low: <red><bold>Hub location is too low.</bold></red>
+  reload: <green>You have <bold>successfully</bold> reloaded the configuration.</green>
+  no_permission: <red><bold>You do not have permission to use this command.</bold></red>
+  too_low: <red><bold>You are too low to use this command.</bold></red>
+  reset_y: <red><bold>Y coordinate has been reset.</bold></red>
