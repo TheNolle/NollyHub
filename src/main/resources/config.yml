@@ -21,8 +21,8 @@ hub:
 # Features
 features:
   disable_hunger: false
-  set_adventure_gamemode: false
   disable_pvp: false
+  protected_mode: false
 
 # Messages
 messages:
@@ -35,6 +35,9 @@ messages:
   too_low: <red><bold>You are too low to use this command.</bold></red>
   reset_y: <red><bold>Y coordinate has been reset.</bold></red>
   invalid_action: "<red><bold><underline>Invalid action:</underline> {action}</bold></red>"
+  protected_mode_interact: <red>You cannot interact while in protected mode.</red>
+  bypass_enabled: <green>Bypass mode enabled.</green>
+  bypass_disabled: <red>Bypass mode disabled.</red>
   features:
     invalid: "<red><bold>Invalid feature: {feature}</bold></red>"
     how_to_use: "<gold>Usage: /hub_feature [feature] [enable/disable/status]</gold>"

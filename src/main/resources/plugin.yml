@@ -5,7 +5,7 @@ discord: https://discord.com/invite/86yVsMVN9z
 
 # Plugin informations
 name: NollyHub
-version: Alpha 0.0.1
+version: Alpha 0.0.1-c
 description: NollyHub is a comprehensive hub/spawn plugin designed for Minecraft servers. This plugin offers custom permissions, commands, messages, and aliases, all configurable through a user-friendly config.yml file. Designed and maintained by Nolly, NollyHub aims to offer a seamless, enjoyable experience for both server administrators and players.
 main: com.thenolle.plugins.nollyhub.NollyHub
 
@@ -27,6 +27,10 @@ commands:
   # Admin command
   hub_reload:
     description: Reloads the plugin configuration.
+    usage: /<command>
+  # Admin command
+  hub_bypass:
+    description: Bypasses the hub features.
     usage: /<command>
 
 # Permissions

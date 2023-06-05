@@ -6,10 +6,10 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 
-public class FoodLevelChange implements Listener {
+public class FoodLevelChangeListener implements Listener {
     private final NollyHub plugin;
 
-    public FoodLevelChange(NollyHub plugin) {
+    public FoodLevelChangeListener(NollyHub plugin) {
         this.plugin = plugin;
     }
 
@@ -22,7 +22,10 @@ public class FoodLevelChange implements Listener {
 
     public void disableHunger(FoodLevelChangeEvent event) {
         if (event.getEntity() instanceof Player) {
-            event.setCancelled(true);
+            Player player = (Player) event.getEntity();
+            if (!plugin.getBypassPlayers().contains(player.getUniqueId())) {
+                event.setCancelled(true);
+            }
         }
     }
 }
